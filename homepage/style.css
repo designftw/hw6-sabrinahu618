@@ -211,6 +211,11 @@
       grid-template-columns: 1fr;
       grid-template-rows: auto 1fr 1fr;
     }
+
+    .title {
+      width: 100%;
+    }
+    
     .contact {
       display: flex;
       flex-direction: column;
@@ -224,6 +229,19 @@
     }
     .NavBar-container {
       display: none;
+    }
+    .navstyle {
+      display: none;
+    }
+    
+    article {
+      width: 73%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .title {
+      width: 100%;
     }
   }
 
