@@ -123,10 +123,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-right: 22em;
-    margin-left: 22em;
+    padding: 2em;
+    max-width: fit-content;
+    margin: auto;
     background-color: white;
     border-radius: 0.5em;
     color: #748ffc;
@@ -174,7 +173,6 @@
 
   @media (max-width: 60em) {
     .home {
-      background-color: red;
       display: grid;
       grid-template-columns: 1fr;
       padding-top: 2em;
@@ -189,9 +187,9 @@
     .headshot img {
       width: 22em;
       height: 22em;
+      margin-left: 0;
       border: 1px solid rgb(201, 201, 201);
       border-radius: 0.5em;
-      margin-left: 5em;
       box-shadow: inset 0 -3em 3em rgb(255, 255, 255),
       0.3em 0.3em 1em #748ffc;
     }
@@ -199,6 +197,7 @@
     .about {
       margin-right:auto;
       margin-left:auto;
+      padding: 2em;
     }
     .cv {
       display: flex;
@@ -217,4 +216,17 @@
       flex-direction: column;
       align-items: center;
     }
+  }
+
+  @media print {
+    body {
+      font-size: 11pt;
+    }
+    .NavBar-container {
+      display: none;
+    }
+  }
+
+  body {
+    margin: 0;
   }
