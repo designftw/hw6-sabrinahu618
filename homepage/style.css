@@ -1,0 +1,220 @@
+/* your css here */
+.portfolio {
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr 1fr;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1px solid hsl(0, 0%, 87%);
+    /* background-color: rgb(240, 239, 239); */
+    border-radius: 0.5em;
+    box-shadow: inset 0 -3em 3em rgb(255, 255, 255),
+    0.3em 0.3em 1em #748ffc;
+  }
+
+  .portfolio p {
+    text-align: center;
+  }
+
+  .portfolio b {
+    padding: 0.5em;
+    text-align: center;
+  }
+
+  .portfolio img {
+    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 16 /9;
+    background-color: white;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.5em;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    color: #748ffc;
+  }
+
+  .work {
+    color: #748ffc;
+  }
+
+  .cv {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+	  grid-template-rows: auto 1fr;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2em;
+  }
+
+  .headshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headshot img {
+    width: 22em;
+    height: 22em;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 0.5em;
+    margin-left: 5em;
+    box-shadow: inset 0 -3em 3em rgb(255, 255, 255),
+    0.3em 0.3em 1em #748ffc;
+  }
+
+
+  .about {
+    margin-right:10em;
+  }
+
+  .NavBar-container {
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: flex-end;
+    padding-right: 3em;    
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  .NavBar-container > a {
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.5em;
+  }
+
+  a:hover {
+    color: #748ffc;
+  }
+
+  a:active {
+    color: #748ffc;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-right: 22em;
+    margin-left: 22em;
+    background-color: white;
+    border-radius: 0.5em;
+    color: #748ffc;
+    font-size: 1.2em;
+    box-shadow: inset 0 -3em 3em rgb(255, 255, 255),
+    0.3em 0.3em 1em #748ffc;
+  }
+
+  input[type=text] {
+    width: 100%;
+    height: 1.5em;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    cursor: pointer;
+    width: 100%;
+    background-color: #748ffc;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+
+  input[type=submit]:hover {
+    cursor: pointer;
+    width: 100%;
+    background-color: #5676f8;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+
+  .navstyle {
+    color: #748ffc;
+  }
+
+  @media (max-width: 60em) {
+    .home {
+      background-color: red;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding-top: 2em;
+    }
+
+    .headshot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .headshot img {
+      width: 22em;
+      height: 22em;
+      border: 1px solid rgb(201, 201, 201);
+      border-radius: 0.5em;
+      margin-left: 5em;
+      box-shadow: inset 0 -3em 3em rgb(255, 255, 255),
+      0.3em 0.3em 1em #748ffc;
+    }
+
+    .about {
+      margin-right:auto;
+      margin-left:auto;
+    }
+    .cv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .portfolio {
+      padding: 1em;
+      display: grid;
+      gap: 1em;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr 1fr;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
